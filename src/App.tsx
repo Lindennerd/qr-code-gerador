@@ -15,13 +15,13 @@ function App() {
     });
   }
 
-  function copyQrCode() {
-    if (qrCodeCanvasRef?.current == null) return;
-    const canvasAsImage = new ClipboardItem({
-      "image/png": qrCodeCanvasRef.current.toDataURL(),
-    });
-    navigator.clipboard.write([canvasAsImage]);
-  }
+  // function copyQrCode() {
+  //   if (qrCodeCanvasRef?.current == null) return;
+  //   const canvasAsImage = new ClipboardItem({
+  //     "image/png": qrCodeCanvasRef.current.toDataURL(),
+  //   });
+  //   navigator.clipboard.write([canvasAsImage]);
+  // }
 
   return (
     <div className="page">
